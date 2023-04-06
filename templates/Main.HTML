@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Spotify Search</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+
+<body>
+    <h1>A Playlist of Your Favorite Artists!</h1>
+    <div>
+        <form method="post" action="{{ url_for ('search') }}">
+            <label for="search-input">Search for an Artist:</label>
+            <input type="text" id="search-input" name="artist">
+            <button id="search-button">Search</button>
+    </div>
+    <div id="results"></div>
+    <div>
+        {% if list %}
+                <ul>
+                {% for l in list %}
+            
+                    <li>{{l}}<br>
+              
+                {% endfor %}
+                </ul>
+        {% endif %}
+    </div>
+    
+
+  
+
+  
+    <script src="{{ url_for('static', filename='script.js' )}}></script>
+</body>
+
+</html>
