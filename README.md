@@ -4,7 +4,7 @@ Welcome aboard to ArtistVerse! A website that can generate your favorite songs a
 
 # Techstack: 
 ### Frontend: HTML, CSS, Javascript
-### Backend: Python(Flask), MySQL
+### Backend: Python(Flask), SQL(MySQL)
 
 # Below is a screenshot of what the results will show with an artist searched:
 ![Description of the image](website.png)
